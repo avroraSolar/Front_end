@@ -123,3 +123,52 @@
     outline: none;
   }
   /*# sourceMappingURL=style.css.map */
+
+  .traffic_light {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    width: 150px;
+  }
+  .red, .yellow, .green {
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: .3;
+  }
+  .red {
+    background-color: red;
+    box-shadow: 0 0 25px red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+    box-shadow: 0 0 25px yellow;
+  }
+  .green {
+    background-color: green;
+    box-shadow: 0 0 25px rgb(59, 245, 59);
+  }
+  .red.active,
+  .yellow.active,
+  .green.active {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  .traffic_button {
+    display: inline-block;
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: beige;
+    transition: all .3s ease;
+  }
+  .traffic_button:hover {
+    transform: scale(1.2);
+  }

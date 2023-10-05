@@ -7,6 +7,12 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+        <div class="traffic__lights">
+            <div id="red" class="traffic__light traffic__red"></div>
+            <div id="yellow" class="traffic__light"></div>
+            <div id="green" class="traffic__light"></div>
+            <button id="btn" class="traffic__btn">Click It</button>
+          </div>
         <div class="parent-traffic-light">
             <div class="traffic-light">
                 <div class="circle"></div>
@@ -17,6 +23,15 @@
                 <button type="button" class="btn-run">Run</button>
             </div>
         </div>
+
+        <div class="traffic">
+            <div class="traffic_light">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+            <button class="traffic_button" onclick="getChangeLight()" type="button">switch</button>
+          </div>
         <script src="./main.js"></script>
     </body>
 </html>
