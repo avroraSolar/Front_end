@@ -118,38 +118,22 @@ let active = document.querySelectorAll('.active');
 let activeColor = 0;
 
 function getChangeLight() {
+    if()
+    clearLights();
     const traffic = light[activeColor];
-    // console.log(traffic.classList.value);
-    // let arr = Array.from(traffic.classList);
-    // console.log(active);
-    // console.log(arr);
-   
-for(let i = 0; i < light.length; i++) {
-    if (light[i].className.includes('active')) {
-        light[i].classList.remove('active');
-    }
-}
 
-    // if(light[0].className.includes('active') || light[1].className.includes('active') || light[2].className.includes('active')) {
-    //     light[0].classList.remove('active');
-    //     light[1].classList.remove('active');
-    //     light[2].classList.remove('active');
-    //     console.log('+');
-    // }
-        traffic.classList.toggle('active');
-    
-    
+    traffic.classList.toggle('active');
     activeColor++;
     if (activeColor > 2) {
         activeColor = 0;
     }
-    
-    // console.log(arr);
-    console.log(traffic.className.includes('active'));
 }
 
 
 function clearLights() {
-    document.getElementsByClassName('active').style.backgroundColor = "black";
+    for (let i = 0; i < light.length; i++) {
+        if (light[i].className.includes('active')) {
+            light[i].classList.remove('active');
+        }
+    }
 }
-console.log(document.querySelectorAll('.active'));
